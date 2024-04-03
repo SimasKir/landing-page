@@ -1,0 +1,145 @@
+.carousel {
+    background-color: $color-pink;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 27px 0 43px;
+        margin: 0 auto;
+    }
+
+    &__heading {
+        margin: 0 0 40px 0;
+        text-align: center;
+    }
+
+    &__cta {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+        & a {
+            width: 360px;
+            height: 54px;
+            padding: 11px 42px;
+            border-radius: 15px;
+            background-color: $color-dark;
+            text-decoration: none;
+            color: $color-light;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__items {
+        width: 362px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        @include responsive-breakpoints-up($breakpoint-small) {
+            width: 524px;
+        }  
+
+        @include responsive-breakpoints-up($breakpoint-medium) {
+            width: 719px;
+        } 
+
+        &-hidden {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    &__card {
+        min-width: 362px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        @include responsive-breakpoints-up($breakpoint-small) {
+            flex-direction: column;
+            min-width: 524px;
+        }  
+
+        @include responsive-breakpoints-up($breakpoint-medium) {
+            flex-direction: row;
+            min-width: 719px;
+        } 
+
+        &-text {
+            width: 347px;
+            text-align: center;
+
+            @include responsive-breakpoints-up($breakpoint-medium) {
+                text-align: left;
+            } 
+        }
+
+        &-title {
+            text-align: center;
+
+            @include responsive-breakpoints-up($breakpoint-medium) {
+                text-align: left;
+            } 
+        }
+    }
+
+    &__image-container {
+        width: 267px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &-card {
+            width: 124px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &-text {
+                text-align: center;
+                margin: 3px 0 0 0;
+            }
+
+            &:nth-child(1), &:nth-child(2) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__navigation {
+        width: 174px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 39px auto 0 auto;
+
+        &-left, &-right {
+            display: flex;
+            align-items: center;
+        }
+
+        &-dots {
+            width: 58px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &-dot {
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            border: 1px solid $color-dark;
+        }
+    }
+}
+
+.navigation-dot-active {
+    background-color: $color-dark;
+}
