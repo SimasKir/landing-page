@@ -112,5 +112,11 @@
             justify-content: center;
             align-items: center;
         }
+
+        &:hover, &:active, &:focus {
+            & a {
+                background-color: darken($color-highlight, 10%);
+            }
+        }
     }
 }
