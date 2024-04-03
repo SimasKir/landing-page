@@ -11,11 +11,11 @@ var scripts = [
 ];
 
 for (index = 0; index < scripts.length; ++index) {
-    var script = document.createElement('script');
+    let script = document.createElement('script');
     script.src = scripts[index];
     script.type='text/javascript';
-    var done = false;
-    script.onload = script.onreadystatechange = function() {
+    let done = false;
+    script.onload = script.onreadystatechange = () => {
         if (!done && (!this.readyState || this.readyState == "loaded" || this.readyState == "complete")) {
             done = true;
         }
