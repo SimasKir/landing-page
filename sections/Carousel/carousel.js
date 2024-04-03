@@ -33,24 +33,24 @@ const carouselData = [
     {
         icons: [
             {
-                icon: `../../assets/acai-berry.png`,
-                text: 'organic acai berry'
-            },
-            {
-                icon: '../../assets/acacia.png',
-                text: 'organic acacia gum'
+                icon: '../../assets/green-tea.png',
+                text: 'organic green tea'
             },
             {
                 icon: '../../assets/cinamon.png',
                 text: 'organic ceylon cinnamon bark'
             },
             {
-                icon: '../../assets/green-tea.png',
-                text: 'organic green tea'
+                icon: '../../assets/acacia.png',
+                text: 'organic acacia gum'
+            },
+            {
+                icon: `../../assets/acai-berry.png`,
+                text: 'organic acai berry'
             },
         ],
-        title: '2nd card',
-        text: 'best value per box',
+        title: 'Lorem ipsum',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     },
     {
         icons: [
@@ -71,8 +71,8 @@ const carouselData = [
                 text: 'organic green tea'
             },
         ],
-        title: '3rd card',
-        text: 'no commitment, cancel anytime',
+        title: 'Lorem ipsum dolor',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     },
 ]
 
@@ -174,32 +174,5 @@ window.addEventListener("load", () => {
     const scrollCarousel = (index) => {
         const carouselItems = document.querySelector('.carousel__items-hidden');
         carouselItems.style.transform = `translateX(${index * -100}%)`
-        console.log(index);
-        console.log(carouselItems);
     } 
-
-    // const navBurger = document.querySelector(".navigation__mobile");
-    // const burgerIcon = document.querySelector(".burger-icon");
-    // const closeIcon = document.querySelector(".close-icon");
-    // const mobilePanel = document.querySelector(".navigation__mobile-panel");
-      
-    // navBurger && navBurger.addEventListener("click", () => {
-    //   if (burgerIcon.classList.contains("hide")) {
-    //     burgerIcon.classList.remove("hide");
-    //     closeIcon.classList.add("hide");
-    //     showMobilePanel();
-    //   } else {
-    //     burgerIcon.classList.add("hide");
-    //     closeIcon.classList.remove("hide");
-    //     showMobilePanel();
-    //   }
-    // });
-  
-    // const showMobilePanel = () => {
-    //     if (mobilePanel.classList.contains("hide")) {
-    //       mobilePanel.classList.remove("hide");
-    //     } else {
-    //       mobilePanel.classList.add("hide");
-    //     }
-    // }
   });
