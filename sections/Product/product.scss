@@ -58,6 +58,10 @@
                     width: 46px;
                     height: 46px;
                 } 
+
+                & path {
+                    @include transition(fill);
+                }
             }
 
             &-text {

@@ -235,7 +235,8 @@
       color: #FFFFFF;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      transition: background-color 0.3s ease-in-out; }
     .hero__cta:hover a, .hero__cta:active a, .hero__cta:focus a {
       background-color: #920d0b; }
 
@@ -291,6 +292,8 @@
         text-align: left; } }
   .features__card-icon {
     height: 48px; }
+    .features__card-icon path {
+      transition: fill 0.3s ease-in-out; }
   .features__card:hover > .features__card-icon path {
     fill: #C2110E; }
 
@@ -342,7 +345,8 @@
       .subscribe__benefits-card-icon {
         height: 20px;
         width: 20px;
-        margin: 0 0 0 18px; }
+        margin: 0 0 0 18px;
+        transition: transform 0.3s ease-in-out; }
         @media (min-width: 768px) {
           .subscribe__benefits-card-icon {
             margin: 0 auto 15px; } }
@@ -420,6 +424,8 @@
         .product__benefits-card-icon {
           width: 46px;
           height: 46px; } }
+      .product__benefits-card-icon path {
+        transition: fill 0.3s ease-in-out; }
     .product__benefits-card-text {
       margin: 0 0 0 15px; }
     .product__benefits-card:nth-child(1) {
@@ -587,7 +593,8 @@
       color: #FFFFFF;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      transition: background-color 0.3s ease-in-out; }
     .carousel__cta:hover a, .carousel__cta:active a, .carousel__cta:focus a {
       background-color: #4d4d4d; }
   .carousel__items {
@@ -602,7 +609,8 @@
         width: 719px; } }
     .carousel__items-hidden {
       display: flex;
-      flex-direction: row; }
+      flex-direction: row;
+      transition: transform 0.3s ease-in-out; }
   .carousel__card {
     min-width: 362px;
     display: flex;
@@ -936,7 +944,8 @@
     .faq__card-question-icon {
       display: flex;
       align-items: center;
-      transform: rotate(180deg); }
+      transform: rotate(180deg);
+      transition: transform 0.3s ease-in-out; }
   .faq__card-answer {
     margin-bottom: 40px;
     margin-top: 5px;
