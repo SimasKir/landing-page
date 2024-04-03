@@ -1,4 +1,4 @@
-const subscribeContainer = document.getElementById("subscribe");
+const subscribePlaceholder = document.getElementById("subscribe");
 
 const subscribeData = [
     {
@@ -18,7 +18,7 @@ const subscribeData = [
     },
 ]
 
-subscribeContainer.innerHTML = 
+subscribePlaceholder.innerHTML = 
 `<div class='container'>
     <div class='subscribe__container'>
         <h2 class='subscribe__heading font-22-bold'>subscribe & save</h2>

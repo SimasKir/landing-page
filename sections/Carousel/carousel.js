@@ -1,4 +1,4 @@
-const carouselContainer = document.getElementById("carousel");
+const carouselPlaceholder = document.getElementById("carousel");
 
 const carouselData = [
     {
@@ -88,7 +88,7 @@ const carouselData = [
     },
 ]
 
-carouselContainer.innerHTML = 
+carouselPlaceholder.innerHTML = 
 `<div class='container'>
     <div class='carousel__container'>
         <h2 class='carousel__heading font-50'><span class='font-red'>[product name]</span> blend</h2>

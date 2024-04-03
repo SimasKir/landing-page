@@ -1,6 +1,6 @@
-const qualityContainer = document.getElementById("quality");
+const qualityPlaceholder = document.getElementById("quality");
 
-qualityContainer.innerHTML = `
+qualityPlaceholder.innerHTML = `
 <div class='container'>
     <div class='quality__container'>
         <img class='quality__image' alt='usda-organic-logo' src='../../assets/usda-organic-logo.png'/>

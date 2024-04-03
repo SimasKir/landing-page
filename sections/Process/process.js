@@ -1,4 +1,4 @@
-const processContainer = document.getElementById("process");
+const processPlaceholder = document.getElementById("process");
 
 const processData = [
     {
@@ -53,7 +53,7 @@ const processData = [
     },
 ]
 
-processContainer.innerHTML = `
+processPlaceholder.innerHTML = `
 <div class='container'>
     <div class='process__container'>
         <h2 class='process__heading font-48'>Meticulous Methodical Process</h2>
