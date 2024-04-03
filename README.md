@@ -5,13 +5,13 @@ index.html is the main file, where all sections html and js are imported via scr
 Project folders: assets, node_modules, sections, styles.
 
 assets - .png and .svg are used for img tags. Where svg's need to be updated - they were added directly to html in sections.
-node_modules - nothing much, just needed for scss.
-sections - main folder, where every section has its html and js in one file and scss in other.
+node_modules - nothing much, just needed for scss.<br>
+sections - main folder, where every section has its html and js in one file and scss in other.<br>
 styles - other classes, which are reused by more than one section. Mixins, variables, font styles, others.
 
 In this project I tried to keep it as simple as possible with a bit of a twist where its not really component based and not everything-in-one-file, but something in between.
 
-For design - tried to keep everything pixel perfect. Although there are few places where I had to update.
+For design - tried to keep everything pixel perfect. Although there are few places where I had to update.<br>
 Also worth to note that for mobile design - I assumed that provided one is the minimal supported width.
 
 ---------------------------------------------------------------------------------------------------------------------------------
