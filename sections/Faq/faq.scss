@@ -29,18 +29,6 @@
         }
     }
 
-    &__cards {
-        padding: 0 17px;
-
-        @include responsive-breakpoints-up($breakpoint-small) {
-            padding: 0 37px;
-        }  
-
-        @include responsive-breakpoints-up($breakpoint-medium) {
-            padding: 0;
-        }
-    }
-
     &__card {
         overflow: hidden;
 
@@ -58,6 +46,14 @@
                 align-items: center;
                 transform: rotate(180deg);
                 @include transition(transform);
+            }
+
+            &-text {
+                width: 279px;
+
+                @include responsive-breakpoints-up($breakpoint-small) {
+                    width: 100%;
+                }  
             }
         }
 

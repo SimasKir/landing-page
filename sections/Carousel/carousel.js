@@ -129,31 +129,48 @@ carouselContainer.innerHTML =
 window.addEventListener("load", () => {
     const carouselLeftArrow = document.querySelector('.carousel__navigation-left');
     const carouselRightArrow = document.querySelector('.carousel__navigation-right');
+    const carouselLeftArrowPath = document.querySelector('.carousel__navigation-left path');
+    const carouselRightArrowPath = document.querySelector('.carousel__navigation-right path');
     const carouselDots = document.querySelectorAll('.carousel__navigation-dot');
 
     let activeCard = 0;
 
     carouselDots[0].classList.add("navigation-dot-active");
+    carouselLeftArrowPath.style.fill = '#bbbbbb';
 
     carouselLeftArrow.addEventListener("click", () => {
         if (activeCard === 0) {
             return;
+        } else if ( activeCard < 2) {
+            activeCard = activeCard - 1;
+            removeDotsActive();
+            setDotActive(activeCard);
+            scrollCarousel(activeCard);
+            carouselLeftArrowPath.style.fill = '#bbbbbb';
         } else {
             activeCard = activeCard - 1;
             removeDotsActive();
             setDotActive(activeCard);
             scrollCarousel(activeCard);
+            carouselRightArrowPath.style.fill = '#0B0A0C';
         }
     });
 
     carouselRightArrow.addEventListener("click", () => {
         if (activeCard === carouselDots.length - 1) {
             return;
-        } else {
+        } else if ( activeCard > 0 ) {
             activeCard = activeCard + 1;
             removeDotsActive();
             setDotActive(activeCard);
             scrollCarousel(activeCard);
+            carouselRightArrowPath.style.fill = '#bbbbbb';
+        }  else {
+            activeCard = activeCard + 1;
+            removeDotsActive();
+            setDotActive(activeCard);
+            scrollCarousel(activeCard);
+            carouselLeftArrowPath.style.fill = '#0B0A0C';
         }
     });
 

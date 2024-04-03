@@ -933,14 +933,6 @@
     @media (min-width: 992px) {
       .faq__heading {
         margin: 0 0 20px 0; } }
-  .faq__cards {
-    padding: 0 17px; }
-    @media (min-width: 768px) {
-      .faq__cards {
-        padding: 0 37px; } }
-    @media (min-width: 992px) {
-      .faq__cards {
-        padding: 0; } }
   .faq__card {
     overflow: hidden; }
     .faq__card-question {
@@ -956,6 +948,11 @@
         align-items: center;
         transform: rotate(180deg);
         transition: transform 0.3s ease-in-out; }
+      .faq__card-question-text {
+        width: 279px; }
+        @media (min-width: 768px) {
+          .faq__card-question-text {
+            width: 100%; } }
     .faq__card-answer {
       z-index: 10;
       margin-bottom: 40px;
