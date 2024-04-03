@@ -5,18 +5,22 @@ const carouselData = [
         icons: [
             {
                 icon: `../../assets/acai-berry.png`,
-                text: 'organic acai berry'
+                alt: 'acai-berry',
+                text: 'organic acai berry',
             },
             {
                 icon: '../../assets/acacia.png',
+                alt: 'acacia',
                 text: 'organic acacia gum'
             },
             {
                 icon: '../../assets/cinamon.png',
+                alt: 'cinamon',
                 text: 'organic ceylon cinnamon bark'
             },
             {
                 icon: '../../assets/green-tea.png',
+                alt: 'green-tea',
                 text: 'organic green tea'
             },
         ],
@@ -34,18 +38,22 @@ const carouselData = [
         icons: [
             {
                 icon: '../../assets/green-tea.png',
+                alt: 'green-tea',
                 text: 'organic green tea'
             },
             {
                 icon: '../../assets/cinamon.png',
+                alt: 'cinamon',
                 text: 'organic ceylon cinnamon bark'
             },
             {
                 icon: '../../assets/acacia.png',
+                alt: 'acacia',
                 text: 'organic acacia gum'
             },
             {
                 icon: `../../assets/acai-berry.png`,
+                alt: 'acai-berry',
                 text: 'organic acai berry'
             },
         ],
@@ -55,19 +63,23 @@ const carouselData = [
     {
         icons: [
             {
-                icon: `../../assets/acai-berry.png`,
-                text: 'organic acai berry'
-            },
-            {
-                icon: '../../assets/acacia.png',
-                text: 'organic acacia gum'
-            },
-            {
                 icon: '../../assets/cinamon.png',
+                alt: 'cinamon',
                 text: 'organic ceylon cinnamon bark'
             },
             {
+                icon: '../../assets/acacia.png',
+                alt: 'acacia',
+                text: 'organic acacia gum'
+            },
+            {
+                icon: `../../assets/acai-berry.png`,
+                alt: 'acai-berry',
+                text: 'organic acai berry'
+            },
+            {
                 icon: '../../assets/green-tea.png',
+                alt: 'green-tea',
                 text: 'organic green tea'
             },
         ],
@@ -93,7 +105,7 @@ carouselContainer.innerHTML =
                             ${item.icons?.map((icon) => {
                                 return `
                                 <div class='carousel__image-container-card'>
-                                    <img class='carousel__image-container-card-icon' src='${icon.icon}'/>
+                                    <img class='carousel__image-container-card-icon' src='${icon.icon}' alt='${icon.alt}' />
                                     <p class='carousel__image-container-card-text'>${icon.text}</p>
                                 </div>`
                             }).join('')}
