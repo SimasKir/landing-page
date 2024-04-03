@@ -42,11 +42,16 @@
     }
 
     &__card {
+        overflow: hidden;
+
         &-question {
+            z-index: 20;
             display: flex;
             justify-content: space-between;
             flex-direction: row;
             margin-bottom: 15px;
+            background-color: $color-grey;
+            position: relative;
 
             &-icon {
                 display: flex;
@@ -57,10 +62,14 @@
         }
 
         &-answer {
+            z-index: 10;
             margin-bottom: 40px;
             margin-top: 5px;
             width: 295px;
             padding-right: 40px;
+            transform: translateY(-120%);
+            position: relative;
+            @include transition(transform);
 
             @include responsive-breakpoints-up($breakpoint-small) {
                 margin-top: 3px;
