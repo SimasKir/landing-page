@@ -164,6 +164,7 @@ window.addEventListener("load", () => {
 
     faqAnswers[0].classList.remove("hide");
     faqIcons[0].style.transform = 'rotate(0)';
+    faqAnswers[0].style.transform = 'translateY(0px)';
 
     faqCards.forEach((card, index) => {
         const cardIndex = index;
@@ -175,9 +176,10 @@ window.addEventListener("load", () => {
     const addHiddenClass = () => {
         faqAnswers.forEach((answer) => {
             if (answer.classList.contains("hide")) {
-                return;
+                answer.style.transform = 'translateY(-120%)';
             } else {
                 answer.classList.add("hide");
+                answer.style.transform = 'translateY(-120%)';
             }
         })
         faqIcons.forEach((icon) => {
@@ -190,10 +192,15 @@ window.addEventListener("load", () => {
             addHiddenClass();
             faqAnswers[index].classList.remove("hide");
             faqIcons[index].style.transform = 'rotate(0)';
+            setTimeout(() => {
+                faqAnswers[index].style.transform = 'translateY(0px)';
+            }, 100);
         } else {
-            faqAnswers[index].classList.add("hide");
+            faqAnswers[index].style.transform = 'translateY(0px)';
             faqIcons[index].style.transform = 'rotate(180deg)';
-            
+            setTimeout(() => {
+                faqAnswers[index].classList.add("hide");
+            }, 100);
         }
     }
   });
