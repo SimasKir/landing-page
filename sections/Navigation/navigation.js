@@ -1,6 +1,7 @@
 const navContainer = document.getElementById("navigation");
 navContainer.innerHTML = `
-<div class='navigation__container container'>
+<div class='container'>
+  <div class='navigation__container'>
   <ul class='navigation__list font-16'>
     <li><a href='#' class='navigation__list-item'>shop</a></li>
     <li><a href='#' class='navigation__list-item'>mission</a></li>
@@ -14,9 +15,10 @@ navContainer.innerHTML = `
   </div>
   <div class='navigation__mobile-panel hide'>
     <ul class='navigation__mobile-list font-16'>
-      <li><a href='#' class='navigation__mobile-list-item'>shop</a></li>
-      <li><a href='#' class='navigation__mobile-list-item'>mission</a></li>
+      <li><a href='#' class='navigation__mobile-list-item bold'>shop</a></li>
+      <li><a href='#' class='navigation__mobile-list-item bold'>mission</a></li>
     </ul>
+  </div>
   </div>
 </div>`;
 
