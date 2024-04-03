@@ -11,7 +11,7 @@ styles - main css file where scss is translated and scss file with imports from 
 
 In this project I tried to keep it as simple as possible with a bit of a twist where its not really component based and not everything-in-one-file, but something in between.
 
-For design - tried to keep everything pixel perfect. Although there are few places where I had to update.
+For design - tried to keep everything pixel perfect. Although there are few places where I had to update.<br>
 Also worth to note that for mobile design - I assumed that provided one is the minimal supported width.
 
 ---------------------------------------------------------------------------------------------------------------------------------
