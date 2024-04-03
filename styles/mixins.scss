@@ -3,3 +3,7 @@
       @content;
     }
 }
+
+@mixin transition($prop) {
+    transition: $prop 0.3s ease-in-out;
+}

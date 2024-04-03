@@ -31,6 +31,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @include transition(background-color);
         }
 
         &:hover, &:active, &:focus {
@@ -56,6 +57,7 @@
         &-hidden {
             display: flex;
             flex-direction: row;
+            @include transition(transform);
         }
     }
 
