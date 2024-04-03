@@ -3,14 +3,17 @@ const subscribeContainer = document.getElementById("subscribe");
 const subscribeData = [
     {
         icon: '../../assets/cycle.svg',
+        alt: 'cycle',
         text: 'delivery every 30 days',
     },
     {
         icon: '../../assets/percent.svg',
+        alt: 'percent',
         text: 'best value per box',
     },
     {
         icon: '../../assets/x.svg',
+        alt: 'close',
         text: 'no commitment, cancel anytime',
     },
 ]
@@ -23,7 +26,7 @@ subscribeContainer.innerHTML =
             ${subscribeData.map((item, index) => {
                 return `
                 <div class='subscribe__benefits-card'>
-                    <img class='subscribe__benefits-card-icon' src='${item.icon}'/>
+                    <img class='subscribe__benefits-card-icon' src='${item.icon}' alt='${item.alt}' />
                     <p class='subscribe__benefits-card-text font-16-lighter subscribe-card-width-${index}'>${item.text}</p>
                 </div>`
             }).join('')}

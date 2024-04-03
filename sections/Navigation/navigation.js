@@ -7,8 +7,8 @@ navContainer.innerHTML = `
       <li><a href='#' class='navigation__list-item'>mission</a></li>
     </ul>
     <div class='navigation__mobile'>
-      <img class='burger-icon' src='../../assets/burger.svg'/>
-      <img class='close-icon hide' src='../../assets/close.svg'/>
+      <img class='navigation__mobile-burger' alt='burger-icon' src='../../assets/burger.svg'/>
+      <img class='navigation__mobile-close alt='close-icon' hide' src='../../assets/close.svg'/>
     </div>
     <div class='navigation__logo'>
       <p class='navigation__logo-text font-32'>LOGO</p>
