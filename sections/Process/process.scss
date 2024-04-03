@@ -279,12 +279,7 @@
             }
         }
 
-        &-title {
-            margin: 0;
-        }
-
         &-text {
-            margin: 0;
             display: none;
 
             @include responsive-breakpoints-up($breakpoint-small) {
@@ -292,7 +287,6 @@
             } 
 
             &-mobile {
-                margin: 0;
                 display: block;
 
                 @include responsive-breakpoints-up($breakpoint-small) {
