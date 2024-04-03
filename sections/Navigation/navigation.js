@@ -57,7 +57,6 @@ window.addEventListener('resize', () => {
   if (windowWidth > 768) {
     if (burgerIcon.classList.contains("hide")) {
       mobilePanel.classList.add("hide");
-      console.log(windowWidth);
       burgerIcon.classList.remove("hide");
       closeIcon.classList.add("hide");
     } else {

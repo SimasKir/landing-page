@@ -18,11 +18,13 @@
         align-items: center;
         height: 100%;
         list-style-type: none;
-        padding: 0;
-        margin: 0;
         position: absolute;
         left: 17px;
         display: none;
+
+        & li:first-child {
+            margin-right: 24px;
+        }
 
         @include responsive-breakpoints-up($breakpoint-small) {
             left: 38px;
@@ -31,15 +33,12 @@
 
         @include responsive-breakpoints-up(980px) {
             display: flex;
+            left: 0;
         } 
 
         &-item {
             color: $color-dark-lighten;
             text-decoration: none;
-
-            &:first-child {
-                margin-right: 24px;
-            }
         }
     }
 
@@ -49,8 +48,6 @@
         align-items: center;
         justify-content: center;
         height: 100%;
-        padding: 0;
-        margin: 0;
         position: absolute;
         left: 17px;
         width: 35px;
@@ -92,7 +89,6 @@
         } 
 
         &-text {
-            margin: 0;
             color: $color-dark;
             font-weight: 700;
         }
