@@ -32,6 +32,12 @@
             justify-content: center;
             align-items: center;
         }
+
+        &:hover, &:active, &:focus {
+            & a {
+                background-color: lighten($color-dark, 30%);
+            }
+        }
     }
 
     &__items {

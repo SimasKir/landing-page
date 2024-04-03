@@ -241,6 +241,8 @@
       display: flex;
       justify-content: center;
       align-items: center; }
+    .hero__cta:hover a, .hero__cta:active a, .hero__cta:focus a {
+      background-color: #920d0b; }
 
 .features__container {
   display: flex;
@@ -592,6 +594,8 @@
       display: flex;
       justify-content: center;
       align-items: center; }
+    .carousel__cta:hover a, .carousel__cta:active a, .carousel__cta:focus a {
+      background-color: #4d4d4d; }
   .carousel__items {
     width: 362px;
     margin: 0 auto;
