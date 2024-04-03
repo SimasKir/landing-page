@@ -7,7 +7,7 @@ Project folders: assets, node_modules, sections, styles.
 assets - .png and .svg are used for img tags. Where svg's need to be updated - they were added directly to html in sections.
 node_modules - nothing much, just needed for scss.
 sections - main folder, where every section has its html and js in one file and scss in other.
-styles - other classes, which are reused by more than one section. Mixins, variables, font styles, others.
+styles - main css file where scss is translated and scss file with imports from all other scss files. Also other classes, which are reused by more than one section. Mixins, variables, font styles, others.
 
 In this project I tried to keep it as simple as possible with a bit of a twist where its not really component based and not everything-in-one-file, but something in between.
 
