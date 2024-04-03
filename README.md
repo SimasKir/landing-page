@@ -19,126 +19,126 @@ Project class tree:
 
 Navigation:
 
-navigation
-    container
-        navigation__container
-            navigation__list
-                navigation__list-item
-                navigation__list-item
-            navigation__mobile
-                navigation__mobile-burger
-                navigation__mobile-close
-            navigation__logo
-                navigation__logo-text
-        navigation__mobile-panel
-            navigation__mobile-list
-                navigation__mobile-list-item
-                navigation__mobile-list-item
+navigation<br>
+----container<br>
+--------navigation__container<br>
+------------navigation__list<br>
+----------------navigation__list-item<br>
+----------------navigation__list-item<br>
+------------navigation__mobile<br>
+----------------navigation__mobile-burger<br>
+----------------navigation__mobile-close<br>
+------------navigation__logo<br>
+----------------navigation__logo-text<br>
+--------navigation__mobile-panel<br>
+------------navigation__mobile-list<br>
+----------------navigation__mobile-list-item<br>
+----------------navigation__mobile-list-item<br>
 
 Hero:
 
-hero
-    hero__container
-        hero__image
-            hero__image-desktop
-            hero__image-tablet
-            hero__image-mobile
-        hero__heading
-            hero__heading-text
-        hero__cta
+hero<br>
+----hero__container<br>
+--------hero__image<br>
+------------hero__image-desktop<br>
+------------hero__image-tablet<br>
+------------hero__image-mobile<br>
+--------hero__heading<br>
+------------hero__heading-text<br>
+--------hero__cta<br>
 
 Features:
 
-features
-    container
-        features__container
-            features__card
-                features__card-icon
-                features__card-text
+features<br>
+----container<br>
+--------features__container<br>
+------------features__card<br>
+----------------features__card-icon<br>
+----------------features__card-text<br>
 
 Subscribe:
 
-subscribe
-    container
-        subscribe__container
-            subscribe__heading
-            subscribe__benefits
-                subscribe__benefits-card
-                    subscribe__benefits-card-icon
-                    subscribe__benefits-card-text
+subscribe<br>
+----container<br>
+--------subscribe__container<br>
+------------subscribe__heading<br>
+------------subscribe__benefits<br>
+----------------subscribe__benefits-card<br>
+--------------------subscribe__benefits-card-icon<br>
+--------------------subscribe__benefits-card-text<br>
 
 Product:
 
-product
-    container
-        product__container
-            product__heading
-            product__benefits
-                product__benefits-card
-                    product__benefits-card-icon
-                    product__benefits-card-text
+product<br>
+----container<br>
+--------product__container<br>
+------------product__heading<br>
+------------product__benefits<br>
+----------------product__benefits-card<br>
+--------------------product__benefits-card-icon<br>
+--------------------product__benefits-card-text<br>
 
 Quality:
 
-quality
-    container
-        quality__container
-            quality__image
-            quality__image-mobile
-            quality__text
+quality<br>
+----container<br>
+--------quality__container<br>
+------------quality__image<br>
+------------quality__image-mobile<br>
+------------quality__text<br>
 
 Carousel:
 
-carousel
-    container
-        carousel__container
-            carousel__heading
-            carousel__items
-                carousel__items-hidden
-                    carousel__card
-                            carousel__card-title
-                            carousel__card-text
-                        carousel__image-container
-                            carousel__image-container-card
-                                carousel__image-container-card-icon
-                                carousel__image-container-card-text
-            carousel__navigation
-                carousel__navigation-left
-                carousel__navigation-dots
-                    carousel__navigation-dot
-                carousel__navigation-right
-            carousel__cta
+carousel<br>
+----container<br>
+--------carousel__container<br>
+------------carousel__heading<br>
+------------carousel__items<br>
+----------------carousel__items-hidden<br>
+--------------------carousel__card<br>
+----------------------------carousel__card-title<br>
+----------------------------carousel__card-text<br>
+------------------------carousel__image-container<br>
+----------------------------carousel__image-container-card<br>
+--------------------------------carousel__image-container-card-icon<br>
+--------------------------------carousel__image-container-card-text<br>
+------------carousel__navigation<br>
+----------------carousel__navigation-left<br>
+----------------carousel__navigation-dots<br>
+--------------------carousel__navigation-dot<br>
+----------------carousel__navigation-right<br>
+------------carousel__cta<br>
 
 Process:
 
-process
-    container
-        process__container
-            process__heading
-            process__stepper
-                process__card
-                    process__card-wrapper
-                        process__card-mobile-icon
-                        process__card-title
-                        process__card-text
-                        process__card-text-mobile
-                        process__card-decoration
-                            process__card-decoration-line
-                            process__card-decoration-dot
-                        process__card-mobile-arrow
-                process__stepper-middle
-                    process__stepper-middle-dot
-                    process__stepper-middle-icon
+process<br>
+----container<br>
+--------process__container<br>
+------------process__heading<br>
+------------process__stepper<br>
+----------------process__card<br>
+--------------------process__card-wrapper<br>
+------------------------process__card-mobile-icon<br>
+------------------------process__card-title<br>
+------------------------process__card-text<br>
+------------------------process__card-text-mobile<br>
+------------------------process__card-decoration<br>
+----------------------------process__card-decoration-line<br>
+----------------------------process__card-decoration-dot<br>
+------------------------process__card-mobile-arrow<br>
+----------------process__stepper-middle<br>
+--------------------process__stepper-middle-dot<br>
+--------------------process__stepper-middle-icon<br>
 
 FAQ:
 
-faq
-    container
-        faq__container
-            faq__heading
-            faq__cards
-                faq__card
-                    faq__card-question
-                        faq__card-question-text
-                        faq__card-question-icon
-                    faq__card-answer
+faq<br>
+----container<br>
+--------faq__container<br>
+------------faq__heading<br>
+------------faq__cards<br>
+----------------faq__card<br>
+--------------------faq__card-question<br>
+------------------------faq__card-question-text<br>
+------------------------faq__card-question-icon<br>
+--------------------faq__card-answer<br>
