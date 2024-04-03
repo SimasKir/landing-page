@@ -86,10 +86,12 @@
   top: 0;
   z-index: 999; }
   .navigation__container {
+    z-index: 50;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    position: relative; }
+    position: relative;
+    background-color: #F5F5F5; }
   .navigation__list {
     display: flex;
     flex-direction: row;
@@ -133,6 +135,7 @@
         color: #0B0A0C;
         text-decoration: none; }
     .navigation__mobile-panel {
+      z-index: 40;
       top: 99%;
       position: absolute;
       width: 100%;
@@ -140,7 +143,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: #F5F5F5; }
+      background: #F5F5F5;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease-in-out; }
   .navigation__logo {
     padding: 14px 0; }
     @media (min-width: 768px) {
