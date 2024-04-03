@@ -1,0 +1,328 @@
+.process {
+    &__container {
+        padding: 30px 0;
+        width: 360px;
+        margin: 0 auto;
+
+        @include responsive-breakpoints-up($breakpoint-small) {
+            padding: 40px 0;
+            width: 712px;
+        }  
+
+        @include responsive-breakpoints-up($breakpoint-medium) {
+            width: 100%;
+            padding: 50px 0;
+        } 
+    }
+
+    &__heading {
+        text-align: center;
+        margin: 0 auto 50px auto;
+        width: 360px;
+
+        @include responsive-breakpoints-up($breakpoint-small) {
+            margin: 0 auto 40px auto;
+            width: 502px;
+        }  
+
+        @include responsive-breakpoints-up($breakpoint-medium) {
+            width: 100%;
+            margin: 0 0 65px 0;
+        } 
+    }
+
+    &__stepper {
+        position: relative;
+
+        &-middle {
+            height: 100%;
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            top: 16px;
+            text-align: center;
+            display: none;
+
+            @include responsive-breakpoints-up($breakpoint-small) {
+                margin: 0 auto 40px auto;
+                width: 502px;
+                display: block;
+            } 
+
+            &-dot {
+                width: 11.85px;
+                height: 11.85px;
+                background-color: $color-grey;
+                border-radius: 50%;
+                position: absolute;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+
+                &:nth-child(1) {
+                    left: 1px;
+                }
+
+                &:nth-child(7) {
+                    left: 1px;
+                    bottom: 6px;
+
+                    @include responsive-breakpoints-up($breakpoint-small) {
+                        bottom: 16px;
+                    }  
+            
+                    @include responsive-breakpoints-up($breakpoint-medium) {
+                        bottom: -28px;
+                    } 
+                }
+            }
+
+            &-icon {
+                position: absolute;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                top: 0;
+
+                &:nth-child(3) {
+                    top: 90px;
+                }
+
+                &:nth-child(4) {
+                    top: 252px;
+                }
+
+                &:nth-child(5) {
+                    top: 410px;
+                }
+
+                &:nth-child(6) {
+                    top: 570px;
+                }
+            }
+        }
+    }
+
+    &__card {
+
+        &:nth-child(1) {
+            text-align: start;
+
+            @include responsive-breakpoints-up($breakpoint-small) {
+                text-align: end;
+            }
+
+            & .process__card-wrapper {
+                padding-left: 0;
+                padding-right: 13px;
+
+                @include responsive-breakpoints-up($breakpoint-small) {
+                    padding-left: 14px;
+                    padding-right: 0;
+                }  
+
+                @include responsive-breakpoints-up($breakpoint-medium) {
+                    padding-left: 31px;
+                }
+            }
+
+            & .process__card-decoration {
+                justify-content: end;
+                flex-direction: row-reverse;
+            }
+
+            & .process__card-mobile-arrow {
+                bottom: -45px;
+                left: 153px;
+            }
+        }
+
+        &:nth-child(2) {
+            display: flex;
+            justify-content: end;
+            margin: 20px 0 20px 0;
+            text-align: end;
+
+            @include responsive-breakpoints-up($breakpoint-small) {
+                margin: 2px 0 17px 0;
+                text-align: start;
+            }  
+
+            @include responsive-breakpoints-up($breakpoint-medium) {
+                margin: 40px 0 40px 0;
+            }
+
+            & .process__card-wrapper {
+                padding-right: 0;
+                padding-left: 10px;
+
+                @include responsive-breakpoints-up($breakpoint-small) {
+                    padding-right: 14px;
+                    padding-left: 0;
+                }  
+
+                @include responsive-breakpoints-up($breakpoint-medium) {
+                    padding-right: 31px;
+                }
+            }
+
+            & .process__card-mobile-arrow {
+                bottom: -45px;
+                left: 53px;
+                transform: rotateY(180deg);
+            }
+        }
+
+        &:nth-child(3) {
+            text-align: start;
+
+            @include responsive-breakpoints-up($breakpoint-small) {
+                text-align: end;
+            } 
+
+            & .process__card-wrapper {
+                padding-left: 0;
+                padding-right: 13px;
+
+                @include responsive-breakpoints-up($breakpoint-small) {
+                    padding-left: 14px;
+                    padding-right: 0;
+                }  
+
+                @include responsive-breakpoints-up($breakpoint-medium) {
+                    padding-left: 31px;
+                }
+            }
+
+            & .process__card-decoration {
+                justify-content: end;
+                flex-direction: row-reverse;
+            }
+
+            & .process__card-mobile-arrow {
+                bottom: -45px;
+                left: 153px;
+            }
+        }
+
+        &:nth-child(4) {
+            display: flex;
+            justify-content: end;
+            margin: 20px 0 0 0;
+            text-align: end;
+
+            @include responsive-breakpoints-up($breakpoint-small) {
+                margin: -21px 0 0 0;
+                text-align: start;
+            }  
+
+            @include responsive-breakpoints-up($breakpoint-medium) {
+                margin: 15px 0 39px 0;
+            }
+
+            & .process__card-wrapper {
+                padding-right: 0; 
+                padding-left: 10px;
+
+                @include responsive-breakpoints-up($breakpoint-small) {
+                    padding-right: 14px;
+                    padding-left: 0;
+                }      
+        
+                @include responsive-breakpoints-up($breakpoint-medium) {
+                    padding-right: 31px;
+                } 
+            }
+
+            & .process__card-mobile-arrow {
+                display: none;
+            }
+        }
+
+        &-wrapper {
+            width: 260px;
+            position: relative;
+
+            @include responsive-breakpoints-up($breakpoint-small) {
+                width: 307px;
+            }  
+    
+            @include responsive-breakpoints-up($breakpoint-medium) {
+                width: 421px;
+            } 
+        }
+
+        &-mobile {
+
+            &-icon {
+                margin-bottom: 20px;
+                display: block;
+    
+                @include responsive-breakpoints-up($breakpoint-small) {
+                    display: none;
+                } 
+            }
+            
+            &-arrow {
+                position: absolute;
+                bottom: 0;
+                left: 200px;
+                display: block;
+    
+                @include responsive-breakpoints-up($breakpoint-small) {
+                    display: none;
+                } 
+            }
+        }
+
+        &-title {
+            margin: 0;
+        }
+
+        &-text {
+            margin: 0;
+            display: none;
+
+            @include responsive-breakpoints-up($breakpoint-small) {
+                display: block;
+            } 
+
+            &-mobile {
+                margin: 0;
+                display: block;
+
+                @include responsive-breakpoints-up($breakpoint-small) {
+                    display: none;
+                } 
+            }
+        }
+
+        &-decoration {
+            margin-top: 8px;
+            display: none;
+            justify-content: start;
+            align-items: center;
+
+            @include responsive-breakpoints-up($breakpoint-small) {
+                display: flex;
+            } 
+
+            &-line {
+                width: 331.46px;
+                height: 3.63px;
+                background-color: $color-grey;
+            }
+
+            &-dot {
+                width: 11.85px;
+                height: 11.85px;
+                background-color: $color-grey;
+                border-radius: 50%;
+            }
+        }
+    }
+}

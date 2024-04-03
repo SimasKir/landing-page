@@ -1,0 +1,80 @@
+.faq {
+    background-color: $color-grey;
+
+    &__container {
+        padding: 18px 0 36px 0;
+        width: 360px;
+        margin: 0 auto;
+
+        @include responsive-breakpoints-up($breakpoint-small) {
+            padding: 36px 0 36px 0;
+            width: 696px;
+        }  
+
+        @include responsive-breakpoints-up($breakpoint-medium) {
+            width: 801px;
+        } 
+    }
+
+    &__heading {
+        margin: 0 0 38px 0;
+        text-align: center;
+
+        @include responsive-breakpoints-up($breakpoint-small) {
+            margin: 0 0 16px 0;
+        }  
+
+        @include responsive-breakpoints-up($breakpoint-medium) {
+            margin: 0 0 20px 0;
+        }
+    }
+
+    &__cards {
+        padding: 0 17px;
+
+        @include responsive-breakpoints-up($breakpoint-small) {
+            padding: 0 37px;
+        }  
+
+        @include responsive-breakpoints-up($breakpoint-medium) {
+            padding: 0;
+        }
+    }
+
+    &__card {
+        &-question {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            margin-bottom: 15px;
+
+            &-text {
+                margin: 0;
+            }
+
+            &-icon {
+                display: flex;
+                align-items: center;
+                transform: rotate(180deg);
+            }
+        }
+
+        &-answer {
+            margin-bottom: 40px;
+            margin-top: 5px;
+            width: 295px;
+            padding-right: 40px;
+
+            @include responsive-breakpoints-up($breakpoint-small) {
+                margin-top: 3px;
+                width: 630px;
+                padding-right: 73px;
+            } 
+
+            @include responsive-breakpoints-up($breakpoint-medium) {
+                width: 762px;
+                padding-right: 110px;
+            } 
+        }
+    }
+} 

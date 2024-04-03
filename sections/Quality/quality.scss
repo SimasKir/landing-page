@@ -1,0 +1,47 @@
+.quality {
+    background-color: $color-grey;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+        margin: 0 auto;
+        align-items: center;
+
+        @include responsive-breakpoints-up($breakpoint-small) {
+            flex-direction: row;
+            padding: 25px 0;
+        } 
+    }
+
+    &__image {
+        width: 108px;
+        height: 100px;
+        display: none;
+
+        @include responsive-breakpoints-up($breakpoint-small) {
+            display: block;
+        } 
+
+        &-mobile {
+            width: 133px;
+            height: 133px;
+            display: block;
+
+            @include responsive-breakpoints-up($breakpoint-small) {
+                display: none;
+            } 
+        }
+    }
+
+    &__text {
+        width: 100%;
+        margin: 30px 0 0 0;
+        text-align: center;
+
+        @include responsive-breakpoints-up($breakpoint-small) {
+            width: 351px;
+            margin: 0 0 0 45px;
+        }
+    }
+}

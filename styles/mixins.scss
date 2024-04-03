@@ -1,0 +1,9 @@
+@mixin responsive-breakpoints-up($breakpoint) {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+}
+
+@mixin width($width) {
+    width: ($width)px;
+}

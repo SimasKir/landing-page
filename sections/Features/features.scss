@@ -1,0 +1,72 @@
+.features {
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px 0;
+        width: 360px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+        @include responsive-breakpoints-up($breakpoint-small) {
+            width: auto;
+            margin: 0 35px;
+            flex-wrap: nowrap;
+        }  
+
+        @include responsive-breakpoints-up($breakpoint-medium) {
+            margin: 0;
+        } 
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        background-color: $color-pink;
+        border-radius: 15px;
+        padding: 14px 27.5px;
+
+        @include responsive-breakpoints-up($breakpoint-small) {
+            flex-direction: column;
+            width: 150px;
+            padding: 14px 0;
+        }  
+
+        @include responsive-breakpoints-up($breakpoint-medium) {
+            flex-direction: row;
+            width: 213px;
+            padding: 25px 10px;
+        } 
+
+        &:nth-child(1), &:nth-child(2) {
+            margin-bottom: 15px;
+
+            @include responsive-breakpoints-up($breakpoint-small) {
+                margin-bottom: 0;
+            } 
+        }
+
+        &-text {
+            margin: 15px 0 0 0;
+            font-weight: 400;
+            text-align: center;
+
+            @include responsive-breakpoints-up($breakpoint-medium) {
+                flex-direction: row;
+                margin: 0 0 0 15px;
+                text-align: left;
+            } 
+        }
+
+        &-icon {
+            height: 48px;
+        }
+
+        &:hover > &-icon path {
+            fill: $color-highlight;
+        }
+    }
+}
