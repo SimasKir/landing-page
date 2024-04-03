@@ -2,23 +2,23 @@ const navContainer = document.getElementById("navigation");
 navContainer.innerHTML = `
 <div class='container'>
   <div class='navigation__container'>
-  <ul class='navigation__list font-16'>
-    <li><a href='#' class='navigation__list-item'>shop</a></li>
-    <li><a href='#' class='navigation__list-item'>mission</a></li>
-  </ul>
-  <div class='navigation__mobile'>
-    <img class='burger-icon' src='../../assets/burger.svg'/>
-    <img class='close-icon hide' src='../../assets/close.svg'/>
-  </div>
-  <div class='navigation__logo'>
-    <p class='navigation__logo-text font-32'>LOGO</p>
+    <ul class='navigation__list font-16'>
+      <li><a href='#' class='navigation__list-item'>shop</a></li>
+      <li><a href='#' class='navigation__list-item'>mission</a></li>
+    </ul>
+    <div class='navigation__mobile'>
+      <img class='burger-icon' src='../../assets/burger.svg'/>
+      <img class='close-icon hide' src='../../assets/close.svg'/>
+    </div>
+    <div class='navigation__logo'>
+      <p class='navigation__logo-text font-32'>LOGO</p>
+    </div>
   </div>
   <div class='navigation__mobile-panel hide'>
     <ul class='navigation__mobile-list font-16'>
       <li><a href='#' class='navigation__mobile-list-item bold'>shop</a></li>
       <li><a href='#' class='navigation__mobile-list-item bold'>mission</a></li>
     </ul>
-  </div>
   </div>
 </div>`;
 
@@ -41,13 +41,18 @@ window.addEventListener("load", () => {
   });
 
   const showMobilePanel = () => {
-      if (mobilePanel.classList.contains("hide")) {
-        mobilePanel.classList.remove("hide");
-      } else {
+    if (mobilePanel.classList.contains("hide")) {
+      mobilePanel.classList.remove("hide");
+      setTimeout(() => {
+        mobilePanel.style.transform = 'translateY(0px)';
+      }, 100);
+    } else {
+      mobilePanel.style.transform = 'translateY(-100%)';
+      setTimeout(() => {
         mobilePanel.classList.add("hide");
-      }
+      }, 200);
+    }
   }
-  
 });
 
 window.addEventListener('resize', () => {
