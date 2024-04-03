@@ -1,5 +1,6 @@
-const heroContainer = document.getElementById("hero");
-heroContainer.innerHTML = `
+const heroPlaceholder = document.getElementById("hero");
+
+heroPlaceholder.innerHTML = `
 <div class='hero__container'>
     <div class='hero__image'>
         <img class='hero__image-desktop' alt='woman-desktop' src='../../assets/hero-desktop.png'/>

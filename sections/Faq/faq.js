@@ -1,4 +1,4 @@
-const faqContainer = document.getElementById("faq");
+const faqPlaceholder = document.getElementById("faq");
 
 const faqData = [
     {
@@ -127,7 +127,7 @@ const faqData = [
     },
 ]
 
-faqContainer.innerHTML = `
+faqPlaceholder.innerHTML = `
 <div class='container'>
     <div class='faq__container'>
         <h2 class='faq__heading font-20'>FAQs</h2>

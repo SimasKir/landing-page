@@ -1,4 +1,4 @@
-const productContainer = document.getElementById("product");
+const productPlaceholder = document.getElementById("product");
 
 const productData = [
     {
@@ -67,7 +67,7 @@ const productData = [
     },
 ]
 
-productContainer.innerHTML = 
+productPlaceholder.innerHTML = 
 `<div class='container'>
     <div class='product__container'>
         <h2 class='product__heading font-22-bold'>Performance nutrition and healthy transformation made simple:</h2>

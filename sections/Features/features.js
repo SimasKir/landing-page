@@ -1,4 +1,4 @@
-const featuresContainer = document.getElementById("features");
+const featuresPlaceholder = document.getElementById("features");
 
 const featuresData = [
     {
@@ -45,15 +45,15 @@ const featuresData = [
     },
 ]
 
-featuresContainer.innerHTML = `
+featuresPlaceholder.innerHTML = `
 <div class='container'>
     <div class='features__container'>
-    ${featuresData.map((feature) => {
-        return `
-        <div class='features__card'>
-            <div class='features__card-icon'>${feature.icon}</div>
-            <p class='features__card-text font-16${feature?.minContent}'>${feature.text}</p>
-        </div>`
-    }).join('')}
+        ${featuresData.map((feature) => {
+            return `
+            <div class='features__card'>
+                <div class='features__card-icon'>${feature.icon}</div>
+                <p class='features__card-text font-16${feature?.minContent}'>${feature.text}</p>
+            </div>`
+        }).join('')}
     </div>
 </div>`;
