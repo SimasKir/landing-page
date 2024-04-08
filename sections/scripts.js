@@ -15,9 +15,8 @@ for (index = 0; index < scripts.length; ++index) {
     script.src = scripts[index];
     script.type='text/javascript';
     let done = false;
-    script.onload = script.onreadystatechange = () => {
-        if (!done && (!this.readyState || this.readyState == "loaded" || this.readyState == "complete")) {
-            console.log('ready state' + this.readyState);
+    script.onload = () => {
+        if (!done) {
             done = true;
         }
     };  
