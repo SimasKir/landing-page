@@ -1,4 +1,4 @@
-var scripts = [
+const scripts = [
     "../sections/Navigation/navigation.js", 
     "../sections/Hero/hero.js",
     "../sections/Features/features.js",
@@ -17,6 +17,7 @@ for (index = 0; index < scripts.length; ++index) {
     let done = false;
     script.onload = script.onreadystatechange = () => {
         if (!done && (!this.readyState || this.readyState == "loaded" || this.readyState == "complete")) {
+            console.log('ready state' + this.readyState);
             done = true;
         }
     };  
